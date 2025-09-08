@@ -56,7 +56,7 @@ fetch("station_schedule.json")
       return;
     }
 
-    document.getElementById("title").textContent = `${stationName} - ${direction} の次の発車`;
+    document.getElementById("title").textContent = `${stationName} - ${direction} の検索結果`;
 
     const station = data.stops.find(s => s.name === stationName);
     if (!station) {
@@ -104,7 +104,7 @@ fetch("station_schedule.json")
     } else {
       const div = document.createElement("div");
       div.className = "departureCard";
-      div.textContent = `本日の${direction}方面の発車は終了しました。`;
+      div.textContent = `本日の${direction}方面の列車は終了しました。`;
       container.appendChild(div);
     }
   })
@@ -112,3 +112,4 @@ fetch("station_schedule.json")
     console.error("読み込みエラー:", error);
     document.getElementById("nextDeparture").textContent = "データの読み込みに失敗しました。";
   });
+
