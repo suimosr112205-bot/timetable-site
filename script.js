@@ -38,13 +38,13 @@ const directionMap = {
   down: "下り",
   extra: "長野電鉄"
 };
-//平日・休日の判定
+
+// 平日・休日の判定
 const dayType = getQueryParam("day") || "weekday";
 const jsonFile = dayType === "holiday" ? "station_schedule_holiday.json" : "station_schedule.json";
 
-
 // メイン処理：データ取得＆表示
-fetch("station_schedule.json")
+fetch(jsonFile)
   .then(res => res.json())
   .then(data => {
     const stationName = getQueryParam("station");
@@ -56,9 +56,10 @@ fetch("station_schedule.json")
       return;
     }
 
-    document.getElementById("title").textContent = "検索結果";
+    // 1段目（検索結果）
+    document.getElementById("title").textContent = `${stationName} - ${direction} の検索結果`;
 
-
+    // 2段目（駅名だけ）
     document.getElementById("stationName").textContent = stationName;
 
     const station = data.stops.find(s => s.name === stationName);
@@ -115,6 +116,3 @@ fetch("station_schedule.json")
     console.error("読み込みエラー:", error);
     document.getElementById("nextDeparture").textContent = "データの読み込みに失敗しました。";
   });
-
-
-
