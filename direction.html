@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>方面選択</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 80px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 40px;
+    }
+
+    .direction-button {
+  display: block;             /* ← 横並びから縦並びに変更 */
+  width: 300px;               /* 幅を統一（任意） */
+  margin: 20px auto;          /* 中央寄せ + 上下マージン */
+  padding: 20px 40px;
+  font-size: 1.2em;
+  background-color: #4fc3f7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+    .direction-button:hover {
+      background-color: #039be5;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">方面選択</h1>
+
+  <button id="up" class="direction-button">上り</button>
+  <button id="down" class="direction-button">下り</button>
+  <button id="extra" class="direction-button hidden">その他</button> <!-- ← 追加 -->
+
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const station = params.get("station");
+
+  // 駅ごとの方面ラベル定義
+  const directionLabels = {
+    "安茂里駅": {
+      up: "屋代・上田・松本方面",
+      down: "長野方面"
+    },
+    "長野駅": {
+      up: "北しなの線 妙高高原方面",
+      down: "飯山線 飯山方面",
+      extra: "長野電鉄 須坂方面"  // ✅ 3つ目の方面
+    },
+    "荒木": {
+      up: "長野方面",
+      down: "日赤・上氷鉋・松代方面"
+    },
+    "長野工業高校前": {
+      up: "長野駅方面"
+    }
+  };
+
+  const dir = directionLabels[station] || { up: "上り", down: "下り" };
+
+  // タイトルを更新
+  document.getElementById("title").textContent = `${station} の方面選択`;
+
+  // ボタン取得
+  const upBtn = document.getElementById("up");
+  const downBtn = document.getElementById("down");
+  const extraBtn = document.getElementById("extra");
+
+  // 上りボタンの設定
+  if (dir.up) {
+    upBtn.textContent = dir.up;
+    upBtn.onclick = () => {
+      window.location.href = `timetable.html?station=${encodeURIComponent(station)}&direction=up`;
+    };
+  } else {
+    upBtn.classList.add("hidden");
+  }
+
+  // 下りボタンの設定
+  if (dir.down) {
+    downBtn.textContent = dir.down;
+    downBtn.onclick = () => {
+      window.location.href = `timetable.html?station=${encodeURIComponent(station)}&direction=down`;
+    };
+  } else {
+    downBtn.classList.add("hidden");
+  }
+
+  // 3つ目（extra）ボタンの設定
+  if (dir.extra) {
+    extraBtn.classList.remove("hidden");
+    extraBtn.textContent = dir.extra;
+    extraBtn.onclick = () => {
+      window.location.href = `timetable.html?station=${encodeURIComponent(station)}&direction=extra`;
+    };
+  } else {
+    extraBtn.classList.add("hidden");
+  }
+</script>
+
+
+</body>
+</html>

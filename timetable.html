@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>発車時刻</title>
+  <style>
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f9f9f9;
+  }
+
+  h1 {
+    font-size: 2em;
+    color: #444;
+  }
+
+  /* 発車カードをまとめるコンテナ */
+  #nextDeparture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 各カードの間隔 */
+    margin-top: 30px;
+  }
+
+  /* 各発車カードの見た目 */
+  .departureCard {
+    width: 400px;
+    padding: 20px;
+    background-color: #e0f7fa;  /* 明るい水色 */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.4em;
+    color: #2c3e50;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* カーソルを合わせたとき：ふわっと拡大＆影を強く */
+  .departureCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* クリックできるリンク（時刻）の見た目 */
+  .link-style {
+    color: #1565c0;           /* 通常時の文字色（青） */
+    text-decoration: none;   /* アンダーバーを消す */
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+
+  /* ホバー時に文字色を変える */
+  .link-style:hover {
+    color: #e91e63;           /* ホバー時の文字色（ピンク） */
+    text-decoration: none;   /* 念のため再指定 */
+  }
+
+  /* 表示アニメーション */
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+
+</head>
+<body>
+  <h1 id="title">発車時刻</h1>
+  <div id="nextDeparture" class="card">読み込み中...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
