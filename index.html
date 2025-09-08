@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>駅選択</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;          /* テキスト中央ぞろえ */
+      margin-top: 50px;            /* 上に余白 */
+      background-color: #f0f0f0;   /* 薄いグレー背景 */
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+  display: inline-block;
+  width: 200px;               /* 幅を統一 */
+  height: 60px;               /* 高さを統一 */
+  line-height: 60px;          /* テキストを縦中央に */
+  padding: 0;                 /* paddingをゼロにすることでline-heightだけで調整 */
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background-color 0.2s;
+}
+
+
+    a:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>乗車駅(バス停)を選択：</h1>
+  <ul>
+    <li><a href="direction.html?station=安茂里駅">安茂里駅</a></li>
+    <li><a href="direction.html?station=長野駅">長野駅</a></li>
+    <li><a href="direction.html?station=荒木">荒木</a></li>
+    <li><a href="direction.html?station=長野工業高校前">長野工業高校前</a></li>
+    <li><a href="https://transit.yahoo.co.jp/">その他の駅・バス停</a></li>
+  </ul>
+</body>
+</html>
