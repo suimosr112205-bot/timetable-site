@@ -1,0 +1,208 @@
+{
+  "stops": [
+    {
+      "name": "安茂里駅",
+      "access": {
+        "walk": 20,   
+        "bike": 5    
+      },
+      "departures": {
+        "上り": [
+          { "time": "13:49", "destination": "軽井沢", "type": "普通 しなの鉄道線", "trainId": "1" },
+          { "time": "14:14", "destination": "松本", "type": "普通 篠ノ井線", "trainId": "2" }
+        ],
+        "下り": [
+          { "time": "5:44", "destination": "長野", "type": "普通" },
+          { "time": "6:13", "destination": "長野", "type": "普通" },
+          { "time": "6:46", "destination": "長野", "type": "普通" },
+          { "time": "7:10", "destination": "長野", "type": "普通" },
+          { "time": "7:23", "destination": "長野", "type": "普通" },
+          { "time": "7:27", "destination": "長野", "type": "普通" },
+          { "time": "7:38", "destination": "長野", "type": "普通" },
+          { "time": "7:49", "destination": "豊野", "type": "普通" },
+          { "time": "8:00", "destination": "長野", "type": "普通" },
+          { "time": "8:18", "destination": "長野", "type": "普通" },
+          { "time": "8:30", "destination": "長野", "type": "普通" },
+          { "time": "8:40", "destination": "長野", "type": "普通" },
+          { "time": "8:51", "destination": "長野", "type": "普通" },
+          { "time": "9:14", "destination": "妙高高原", "type": "普通" },
+          { "time": "9:48", "destination": "長野", "type": "普通" },
+          { "time": "9:53", "destination": "長野", "type": "普通" },
+          { "time": "10:26", "destination": "長野", "type": "普通" },
+          { "time": "10:54", "destination": "長野", "type": "普通" },
+          { "time": "11:06", "destination": "長野", "type": "普通" },
+          { "time": "11:47", "destination": "長野", "type": "普通" },
+          { "time": "12:26", "destination": "長野", "type": "普通" },
+          { "time": "12:45", "destination": "長野", "type": "普通" },
+          { "time": "13:06", "destination": "長野", "type": "普通" },
+          { "time": "13:44", "destination": "長野", "type": "普通" },
+          { "time": "13:49", "destination": "長野", "type": "普通" },
+          { "time": "14:26", "destination": "長野", "type": "普通" },
+          { "time": "14:44", "destination": "長野", "type": "普通" },
+          { "time": "15:05", "destination": "長野", "type": "普通" },
+          { "time": "15:31", "destination": "長野", "type": "普通" },
+          { "time": "15:44", "destination": "長野", "type": "普通" },
+          { "time": "16:07", "destination": "長野", "type": "普通" },
+          { "time": "16:34", "destination": "長野", "type": "普通" },
+          { "time": "16:49", "destination": "長野", "type": "普通" },
+          { "time": "16:59", "destination": "長野", "type": "普通" },
+          { "time": "17:13", "destination": "長野", "type": "普通" },
+          { "time": "17:41", "destination": "長野", "type": "普通" },
+          { "time": "17:46", "destination": "長野", "type": "普通" },
+          { "time": "18:05", "destination": "長野", "type": "普通" },
+          { "time": "18:34", "destination": "妙高高原", "type": "普通" },
+          { "time": "18:47", "destination": "長野", "type": "普通" },
+          { "time": "19:07", "destination": "長野", "type": "普通" },
+          { "time": "19:23", "destination": "長野", "type": "普通" },
+          { "time": "19:28", "destination": "長野", "type": "普通" },
+          { "time": "19:54", "destination": "長野", "type": "普通" },
+          { "time": "20:44", "destination": "長野", "type": "普通" },
+          { "time": "20:44", "destination": "長野", "type": "普通" },
+          { "time": "21:09", "destination": "妙高高原", "type": "普通" },
+          { "time": "21:47", "destination": "長野", "type": "普通" },
+          { "time": "22:13", "destination": "長野", "type": "普通" },
+          { "time": "22:25", "destination": "長野", "type": "普通" },
+          { "time": "22:56", "destination": "長野", "type": "普通" },
+          { "time": "23:46", "destination": "長野", "type": "普通" },
+          { "time": "23:55", "destination": "長野", "type": "普通" }
+        ]
+      }
+    },
+    {
+      "name": "長野駅",
+      "access": {
+        "walk": 35,   
+        "bike": 20    
+      },
+      "departures": {
+        "上り": [
+          { "time": "6:00", "destination": "妙高高原", "type": "普通" },
+          { "time": "6:23", "destination": "妙高高原", "type": "普通" },
+          { "time": "7:17", "destination": "妙高高原", "type": "普通" },
+          { "time": "7:45", "destination": "妙高高原", "type": "普通" },
+          { "time": "7:58", "destination": "妙高高原", "type": "普通" },
+          { "time": "8:14", "destination": "妙高高原", "type": "普通" },
+          { "time": "9:23", "destination": "妙高高原", "type": "普通" },
+          { "time": "10:49", "destination": "妙高高原", "type": "普通" },
+          { "time": "12:11", "destination": "妙高高原", "type": "普通" },
+          { "time": "13:17", "destination": "妙高高原", "type": "普通" },
+          { "time": "14:11", "destination": "妙高高原", "type": "普通" },
+          { "time": "15:28", "destination": "妙高高原", "type": "普通" },
+          { "time": "15:43", "destination": "妙高高原", "type": "普通" },
+          { "time": "16:08", "destination": "妙高高原", "type": "普通" },
+          { "time": "17:06", "destination": "妙高高原", "type": "普通" },
+          { "time": "17:20", "destination": "妙高高原", "type": "普通" },
+          { "time": "18:11", "destination": "妙高高原", "type": "普通" },
+          { "time": "18:46", "destination": "妙高高原", "type": "普通" },
+          { "time": "19:50", "destination": "妙高高原", "type": "普通" },
+          { "time": "21:18", "destination": "妙高高原", "type": "普通" },
+          { "time": "22:05", "destination": "妙高高原", "type": "普通" },
+          { "time": "23:19", "destination": "豊野", "type": "普通" }
+        ],
+        "下り": [
+          { "time": "5:10", "destination": "越後川口", "type": "普通" },
+          { "time": "5:51", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "6:58", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "8:37", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "10:23", "destination": "越後川口", "type": "普通" },
+          { "time": "11:47", "destination": "飯山", "type": "普通" },
+          { "time": "12:33", "destination": "十日町", "type": "普通" },
+          { "time": "14:05", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "15:04", "destination": "越後川口", "type": "普通" },
+          { "time": "16:29", "destination": "越後川口", "type": "普通" },
+          { "time": "18:03", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "19:06", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "20:26", "destination": "戸狩野沢温泉", "type": "普通" },
+          { "time": "21:40", "destination": "飯山", "type": "普通" },
+          { "time": "22:53", "destination": "戸狩野沢温泉", "type": "普通" }
+        ],
+        "その他": [
+          { "time": "6:15", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "6:41", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "7:05", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "7:27", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "7:46", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "8:01", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "8:30", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "8:42", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "9:13", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "9:35", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "9:53", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "10:00", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "10:26", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "10:51", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "11:16", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "11:33", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "11:48", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "12:19", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "12:44", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "12:57", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "13:30", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "13:56", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "14:27", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "14:41", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "15:09", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "15:32", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "15:41", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "16:12", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "16:46", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "16:48", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "17:14", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "17:40", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "18:00", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "18:03", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "18:20", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "18:50", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "19:21", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "19:40", "destination": "湯田中", "type": "普通" ,"trainId": "ks1"},
+          { "time": "19:58", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "20:20", "destination": "須坂", "type": "普通" ,"trainId": "ks1"},
+          { "time": "20:40", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "21:26", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "21:56", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "22:14", "destination": "信州中野", "type": "普通" ,"trainId": "ks1"},
+          { "time": "22:49", "destination": "須坂", "type": "普通" ,"trainId": "ks1"}
+        ]
+      }
+    },
+    {
+      "name": "荒木",
+      "access": {
+        "walk": 15,   
+        "bike": 3    
+      },
+      "departures": {
+        "上り": [
+          { "time": "16:30", "destination": "松本", "type": "", "trainId": "A1" }
+        ],
+        "下り": [
+          { "time": "17:00", "destination": "妙高高原", "type": "", "trainId": "A2" }
+        ]
+      }
+    },
+    {
+      "name": "長野工業高校前",
+      "access": {
+        "walk": 1, 
+        "bike": 1    
+      },
+      "departures": {
+        "上り": [
+          { "time": "06:40", "destination": "長野駅", "type": "", "trainId": "k1" },
+          { "time": "07:05", "destination": "長野駅", "type": "", "trainId": "k2" },
+          { "time": "07:25", "destination": "長野駅", "type": "", "trainId": "k3" },
+          { "time": "07:45", "destination": "長野駅", "type": "", "trainId": "k4" },
+          { "time": "08:15", "destination": "長野駅", "type": "", "trainId": "k5" },
+          { "time": "09:25", "destination": "長野駅", "type": "", "trainId": "k6" },
+          { "time": "10:25", "destination": "長野駅", "type": "", "trainId": "k7" },
+          { "time": "12:25", "destination": "長野駅", "type": "", "trainId": "k8" },
+          { "time": "14:25", "destination": "長野駅", "type": "", "trainId": "k9" },
+          { "time": "16:25", "destination": "長野駅", "type": "", "trainId": "k10" },
+          { "time": "17:25", "destination": "長野駅", "type": "", "trainId": "k11" },
+          { "time": "18:25", "destination": "長野駅", "type": "", "trainId": "k12" },
+          { "time": "19:25", "destination": "長野駅", "type": "", "trainId": "k13" }
+        ]
+      }
+    }
+  ]
+}
