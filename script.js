@@ -56,7 +56,8 @@ fetch("station_schedule.json")
       return;
     }
 
-    document.getElementById("title").textContent = `${stationName} - ${direction} の検索結果`;
+    document.getElementById("title").textContent = "検索結果";
+
 
     document.getElementById("stationName").textContent = stationName;
 
@@ -114,5 +115,6 @@ fetch("station_schedule.json")
     console.error("読み込みエラー:", error);
     document.getElementById("nextDeparture").textContent = "データの読み込みに失敗しました。";
   });
+
 
 
