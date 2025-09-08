@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>発車時刻</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
   body {
     font-family: sans-serif;
     text-align: center;
-    margin-top: 50px;
+    margin: 20px;
     background-color: #f9f9f9;
+    font-size: 18px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     color: #444;
+    margin-bottom: 20px;
   }
 
   /* 発車カードをまとめるコンテナ */
@@ -22,20 +25,22 @@
     flex-direction: column;
     align-items: center;
     gap: 20px; /* 各カードの間隔 */
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   /* 各発車カードの見た目 */
   .departureCard {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
     background-color: #e0f7fa;  /* 明るい水色 */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #2c3e50;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInZoom 0.5s ease;
   }
 
   /* カーソルを合わせたとき：ふわっと拡大＆影を強く */
@@ -81,3 +86,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
