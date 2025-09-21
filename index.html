@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>駅選択</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;          
+      margin-top: 50px;            
+      background-color: #f0f0f0;   
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 20px 0;
+    }
+
+    a {
+  display: block;
+  width: 90%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 9px solid #333;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* 路線ごとに色分け */
+a.amori { border-color: #4fc3f7; }   /* 篠ノ井線＝赤 */
+a.nagano  { border-color: #00922c; }   /* 北しなの線＝青 */
+a.bus      { border-color: #243597; }   /* バス＝緑 */
+a.other    { border-color: #888; }   /* その他＝紫 */
+
+/* ホバー時 */
+a:hover {
+  background-color: #f2f2f2;
+}
+
+  </style>
+</head>
+<body>
+  <h1>乗車駅・バス停を選択：</h1>
+  <ul>
+  <li><a href="direction.html?station=安茂里駅" class="amori">安茂里駅</a></li>
+  <li><a href="direction.html?station=長野駅" class="nagano">長野駅</a></li>
+  <li><a href="direction.html?station=荒木" class="bus">荒木</a></li>
+  <li><a href="direction.html?station=長野工業高校前" class="bus">長野工業高校前</a></li>
+  <li><a href="https://transit.yahoo.co.jp/" class="other">その他の駅・バス停</a></li>
+</ul>
+
+</body>
+</html>
