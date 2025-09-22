@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>発車時刻</title>
-  <meta name="viewport" content="width=device-width, initial-scale=0.8">
-
-
   <style>
   body {
     font-family: sans-serif;
@@ -78,6 +75,27 @@
       transform: scale(1);
     }
   }
+
+  .survey-button {
+  display: block;
+  margin: 40px auto 60px; /* 上40px 下60px の余白 */
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50; /* 緑色 */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.survey-button:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
 </style>
 
 
@@ -90,4 +108,18 @@
 </body>
 </html>
 
+<div id="nextDeparture" class="card">よろしければアンケートにお答えください↓</div>
+
+<!-- アンケートボタン -->
+<button id="surveyButton" class="survey-button">
+  アンケートに回答する
+</button>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("surveyButton").onclick = () => {
+    // TODO: あとでGoogleフォームのリンクに差し替える
+    window.location.href = "survey.html";
+  };
+</script>
 
